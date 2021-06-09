@@ -1,0 +1,15 @@
+# 2 exercise#
+
+int numer =100;
+
+ 
+private void SumAveragelnt(int number)
+    {
+        int sum = 0;
+        int  i   = 1;
+        do {
+            sum += i;
+            i++;
+
+        System.out.println("The sum of the "+ number+ " is " + sum);
+    }

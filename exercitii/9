@@ -1,0 +1,25 @@
+# test
+test
+Exercise 9
+
+ private void SortBubbleAlgorithm(string v)
+    {
+      
+	int k=0;
+	int n;
+	int= m;
+
+	 while (k == 0) {
+           k=1;
+            for (int i = 0; i <= v.length(); i++) {
+            	if (v.charAt(i) > v.charAt(i+1)) {
+                m=v.charAt(i);
+		v.charAt(i)=v.charAt(i+1);
+		v.charAt(i+1)=m;
+		k=0;
+          	 }
+           }
+	}
+        
+       
+    }
