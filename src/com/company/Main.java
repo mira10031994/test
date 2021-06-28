@@ -1,6 +1,11 @@
 package com.company;
 import java.util.Scanner;
+
+import static com.company.tema2.IterateThroughElements;
+
 public class Main {
+
+
 
     public static void CheckOddEven() { //ex1
         Scanner input = new Scanner(System.in);
@@ -216,6 +221,24 @@ public class Main {
         RemoveOccurrences();
         BubbleSortAlgorithm();
         ComputeAverage();
+
+        //tema 2
+        tema2 Tema=new tema2();
+
+        String[] str = { "ana", "are", "multe", "mere", "rosi", "si", "gustoase"  };
+        String[] str2 = { "Andrei", "vrea", "multe","mere", "gustoase", "si", "pere", "verzi"   };
+        int[] y = new int[]{1,4,2,3,7,8,9,11,14,17,19,23,34,41,45,55,66};
+        Tema.SortArrays(str,y);
+        Tema.CommonElements(str,str2);
+        Tema.StrigCovertToArry(str);
+        Tema.IterateThroughElements(str);
+        Tema.ReverseElements(str2);
+        Tema.EmptyArray(str);
+        Tema.RandomNumbers();
+        Tema.Grades();
+        Tema.ReversCollection(y);
+
+
 
     }
 
