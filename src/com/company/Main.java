@@ -1,13 +1,13 @@
 package com.company;
 import java.util.Scanner;
 
-import static com.company.tema2.IterateThroughElements;
+import static com.company.tema2.iterateThroughElements;
 
 public class Main {
 
 
 
-    public static void CheckOddEven() { //ex1
+    public static void checkOddEven() { //ex1
         Scanner input = new Scanner(System.in);
         int nr;
         System.out.print("Enter number: ");
@@ -20,7 +20,7 @@ public class Main {
         System.out.println("Bye");
     }
 
-    public static void SumAverageInt(){ //ex2
+    public static void sumAverageInt(){ //ex2
         double sum=0;
         for(int i=1;i<=100;i++) {
             sum=sum+i;
@@ -29,7 +29,7 @@ public class Main {
         System.out.println("The average of numer from 1 to 100 is: "+sum);
     }
 
-    public static void PerfectSquare(){//ex3
+    public static void perfectSquare(){//ex3
         Scanner input = new Scanner(System.in);
         int x;
         System.out.print("Enter number: ");
@@ -43,7 +43,7 @@ public class Main {
         }
     }
 
-    public static void SumProductMinMax(){//ex4
+    public static void sumProductMinMax(){//ex4
         Scanner input = new Scanner(System.in);
         int number,number1,number2;
         System.out.print("Enter frist number: ");
@@ -65,7 +65,7 @@ public class Main {
         System.out.println("Min of the numbers: "+min);
 
     }
-    public static void  Reverse(){//ex5
+    public static void  reverse(){//ex5
         Scanner input = new Scanner(System.in);
         int x,y;
         System.out.print("Enter the number: ");
@@ -78,7 +78,7 @@ public class Main {
         System.out.println("Reverse number: "+y);
 
     }
-    public static void  CountVowelsDigits() {//ex6
+    public static void  countVowelsDigits() {//ex6
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a string: ");
         String str = input.nextLine(); //reads string.
@@ -97,7 +97,7 @@ public class Main {
         System.out.println("numbers: "+nr);
     }
 
-    public static void  InsertAnElement() {//   ex:7
+    public static void  insertAnElement() {//   ex:7
         Scanner input = new Scanner(System.in);
         int nr,m,i,k,p;
         int[] y = new int[100];
@@ -122,7 +122,7 @@ public class Main {
 
     }
 
-    public static void RemoveOccurrences() {//ex 8
+    public static void removeOccurrences() {//ex 8
         Scanner input = new Scanner(System.in);
         int nr,m,i,j,k=1,p;
         int[] y = new int[100];
@@ -153,7 +153,7 @@ public class Main {
         }
 
     }
-    public static void BubbleSortAlgorithm() {//ex9
+    public static void bubbleSortAlgorithm() {//ex9
         Scanner input = new Scanner(System.in);
         int nr,i,m;
         int[] y = new int[100];
@@ -179,7 +179,7 @@ public class Main {
         }
         System.out.println(" ");
     }
-    public static void ComputeAverage() {//ex 10
+    public static void computeAverage() {//ex 10
         Scanner input = new Scanner(System.in);
         int nr,i,min,max,sum=0,p=0;
         int[] y = new int[100];
@@ -211,16 +211,16 @@ public class Main {
     }
     public static void main(String[] args) {
 
-        CheckOddEven();
-        SumAverageInt();
-        PerfectSquare();
-        SumProductMinMax();
-        Reverse();
-        CountVowelsDigits();
-        InsertAnElement();
-        RemoveOccurrences();
-        BubbleSortAlgorithm();
-        ComputeAverage();
+        checkOddEven();
+        sumAverageInt();
+        perfectSquare();
+        sumProductMinMax();
+        reverse();
+        countVowelsDigits();
+        insertAnElement();
+        removeOccurrences();
+        bubbleSortAlgorithm();
+        computeAverage();
 
         //tema 2
         tema2 Tema=new tema2();
@@ -228,15 +228,15 @@ public class Main {
         String[] str = { "ana", "are", "multe", "mere", "rosi", "si", "gustoase"  };
         String[] str2 = { "Andrei", "vrea", "multe","mere", "gustoase", "si", "pere", "verzi"   };
         int[] y = new int[]{1,4,2,3,7,8,9,11,14,17,19,23,34,41,45,55,66};
-        Tema.SortArrays(str,y);
-        Tema.CommonElements(str,str2);
-        Tema.StrigCovertToArry(str);
-        Tema.IterateThroughElements(str);
-        Tema.ReverseElements(str2);
-        Tema.EmptyArray(str);
-        Tema.RandomNumbers();
-        Tema.Grades();
-        Tema.ReversCollection(y);
+        Tema.sortArrays(str,y);
+        Tema.commonElements(str,str2);
+        Tema.strigCovertToArry(str);
+        Tema.iterateThroughElements(str);
+        Tema.reverseElements(str2);
+        Tema.emptyArray(str);
+        Tema.randomNumbers();
+        Tema.grades();
+        Tema.reversCollection(y);
 
 
 

@@ -6,7 +6,7 @@ import java.util.Set;
 import java.util.*;
 import java.io.*;
 public class tema2 {
-    public static  void SortArrays(String[] str,int[] str2){
+    public static  void sortArrays(String[] str,int[] str2){
         Arrays.sort(str);
         Arrays.sort(str2);
 
@@ -21,51 +21,51 @@ public class tema2 {
 
     }
 
-    public static  void CommonElements(String[] str, String[] str2) { // ex 2
-        Scanner input = new Scanner(System.in);
+    public static  void commonElements(String[] str, String[] str2) { // ex 2
         int i,j;
         for (i=0;i<str.length;i++) {
            for (j=0;j<str2.length;j++) {
-               if(str[i]==str2[j]) {
+               if(str[i].equals(str2[j])) {
                    System.out.print(": "+str[i]);
                }
            }
        }
     }
 
-    public static  void StrigCovertToArry(String[] str) { //ex 3
+    public static  void strigCovertToArry(String[] str) { //ex 3
         List<String> list = new ArrayList<String>();
         Collections.addAll(list, str);
         System.out.println(list);
     }
 
-    public static  void IterateThroughElements(String[] str){ //ex 4
+    public static  void iterateThroughElements(String[] str){ //ex 4
 
         for (int i = 0;i<str.length; i++)
+
            System.out.print(str[i]+", ");
     }
 
-    public static  void ReverseElements(String[] str){ //ex 5
+    public static  void reverseElements(String[] str){ //ex 5
         List<String> list = new ArrayList<String>();
         Collections.addAll(list, str);
         Collections.reverse(list);
         System.out.println("List after reversing :\n" + list);
     }
-    public static  void EmptyArray(String[] str) { //ex 6
+    public static  void emptyArray(String[] str) { //ex 6
         ArrayList<String> list = new ArrayList<String>();
         Collections.addAll(list, str);
         list.clear();
-        CheckEmptyArray(list);
+        checkEmptyArray(list);
     }
-    public static  void CheckEmptyArray(ArrayList str){ //ex 6
-        boolean A = str.isEmpty();
-        if (A == true)
+    public static  void checkEmptyArray(ArrayList str){ //ex 6
+        boolean array = str.isEmpty();
+        if (array == true)
             System.out.println("Is empty");
         else
             System.out.println("Is not empty");
     }
 
-    public static  void  RandomNumbers(){//ex 7
+    public static  void  randomNumbers(){//ex 7
         Random rand = new Random();
         int[] y = new int[10];
         int[] x = new int[10];
@@ -85,7 +85,7 @@ public class tema2 {
          System.out.print( x[i]+", ");
         }
     }
-    public static  void Grades() { //ex 8
+    public static  void grades() { //ex 8
         Scanner input = new Scanner(System.in);
         int[] y = new int[100];
         int i,k=0;
@@ -96,9 +96,9 @@ public class tema2 {
                 break;
             }
         }
-        System.out.println(Average(y,i));
+        System.out.println(average(y,i));
     }
-    public static  double Average(int[] grades, int i){
+    public static  double average(int[] grades, int i){
         double sum = 0,average=0;
         for (int j = 0; j<= i; j++) {
             sum += grades[j];
@@ -107,7 +107,7 @@ public class tema2 {
         return average;
 
     }
-    public static  void ReversCollection(int[] y) { //ex 9
+    public static  void reversCollection(int[] y) { //ex 9
         int[] x = new int[100];
         int i,j=0;
         for ( i = y.length-1; i >= 0; i--) {
